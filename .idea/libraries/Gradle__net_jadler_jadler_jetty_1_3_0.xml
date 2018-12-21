@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: net.jadler:jadler-jetty:1.3.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.jadler/jadler-jetty/1.3.0/f81b0b95390651a60457ccf06c3a733dab3657b3/jadler-jetty-1.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.jadler/jadler-jetty/1.3.0/894589bf264355cd5b604d422ab4069116d8c469/jadler-jetty-1.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

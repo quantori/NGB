@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/catgenome/com.epam.catgenome.iml" filepath="$PROJECT_DIR$/.idea/modules/server/catgenome/com.epam.catgenome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/catgenome/com.epam.catgenome.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/catgenome/com.epam.catgenome.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/catgenome/com.epam.catgenome.test.iml" filepath="$PROJECT_DIR$/.idea/modules/server/catgenome/com.epam.catgenome.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.epam.ngb.iml" filepath="$PROJECT_DIR$/.idea/modules/com.epam.ngb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/ngb-cli/com.epam.ngb-cli.iml" filepath="$PROJECT_DIR$/.idea/modules/server/ngb-cli/com.epam.ngb-cli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/ngb-cli/com.epam.ngb-cli.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/ngb-cli/com.epam.ngb-cli.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/ngb-cli/com.epam.ngb-cli.test.iml" filepath="$PROJECT_DIR$/.idea/modules/server/ngb-cli/com.epam.ngb-cli.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/ngb.client.iml" filepath="$PROJECT_DIR$/.idea/modules/client/ngb.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop/ngb.desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop/ngb.desktop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/ngb.server.iml" filepath="$PROJECT_DIR$/.idea/modules/server/ngb.server.iml" />
+    </modules>
+  </component>
+</project>
