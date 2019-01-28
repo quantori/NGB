@@ -20,7 +20,8 @@ deploy:
   keyfile: client-secret.json
   project: prj-ngb
   config: docker/core/app.yaml
-  on: feature/appengine_v1
+  on:
+    branch: feature/appengine_v1
 
 #deploy:
 #  - provider: script
