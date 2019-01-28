@@ -1,5 +1,6 @@
 runtime: custom
 env: flex
+secure: always
 #service: ngb-srv
 manual_scaling:
   instances: 1
