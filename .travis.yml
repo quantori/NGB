@@ -18,8 +18,8 @@ script:
 #    - ./gradlew jacocoTestReport
     - cp ./dist/catgenome.jar ./docker/core
     - cp ./dist/ngb-cli.tar.gz ./docker/core
-    - gcloud config set project prj-ngb
-    - gcloud app deploy ./docker/core/app.yaml
+#    - gcloud config set project prj-ngb
+    - gcloud -q app deploy ./docker/core/app.yaml
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
@@ -31,5 +31,6 @@ before_install:
     fi
 #    curl https://sdk.cloud.google.com | bash;
   - tar -xzf credentials.tar.gz
+  - gcloud config set project prj-ngb
   - gcloud auth activate-service-account --key-file client-secret.json
 #  - ssh-keygen -q -N "" -f ~/.ssh/google_compute_engine
