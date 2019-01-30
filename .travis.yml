@@ -39,5 +39,6 @@ deploy:
   keyfile: "client-secret.json"
   project: "prj-ngb"
   config: "./docker/core/app.yaml"
+  skip_cleanup: true
   on:
     branch: "feature/appengine_v2"
