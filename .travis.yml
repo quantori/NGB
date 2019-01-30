@@ -19,7 +19,7 @@ script:
     - cp ./dist/catgenome.jar ./docker/core
     - cp ./dist/ngb-cli.tar.gz ./docker/core
 #    - gcloud config set project prj-ngb
-    - gcloud -q app deploy ./docker/core/app.yaml
+#    - gcloud -q app deploy ./docker/core/app.yaml
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
@@ -34,3 +34,10 @@ before_install:
   - gcloud config set project prj-ngb
   - gcloud auth activate-service-account --key-file client-secret.json
 #  - ssh-keygen -q -N "" -f ~/.ssh/google_compute_engine
+deploy:
+  provider: gae
+  keyfile: "client-secret.json"
+  project: "prj-ngb"
+  config: "./docker/core/app.yaml"
+  on:
+    branch: "feature/appengine_v2"
