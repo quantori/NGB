@@ -14,12 +14,10 @@ install:
   - sudo pip install mkdocs
   - sudo pip install mkdocs-material
 script: 
-    - ./gradlew buildJar buildWar buildCli buildDoc -PbuildNumber=${TRAVIS_JOB_NUMBER} #&& ./e2e/integration_tests.sh
-#    - ./gradlew jacocoTestReport
+    - ./gradlew buildJar buildWar buildCli buildDoc -PbuildNumber=${TRAVIS_JOB_NUMBER} && ./e2e/integration_tests.sh
+    - ./gradlew jacocoTestReport
     - cp ./dist/catgenome.jar ./docker/core
     - cp ./dist/ngb-cli.tar.gz ./docker/core
-#    - gcloud config set project prj-ngb
-#    - gcloud -q app deploy ./docker/core/app.yaml
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 
@@ -29,11 +27,9 @@ before_install:
     wget https://dl.google.com/dl/cloudsdk/channels/rapid/install_google_cloud_sdk.bash;
     bash ./install_google_cloud_sdk.bash --disable-prompts;
     fi
-#    curl https://sdk.cloud.google.com | bash;
   - tar -xzf credentials.tar.gz
   - gcloud config set project prj-ngb
   - gcloud auth activate-service-account --key-file client-secret.json
-#  - ssh-keygen -q -N "" -f ~/.ssh/google_compute_engine
 deploy:
   provider: gae
   keyfile: "client-secret.json"
